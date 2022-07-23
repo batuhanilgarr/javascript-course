@@ -1,3 +1,4 @@
+// ismi ekrana yazdırma
 var myName = "Batuhan";
 
 var yourName = prompt("What is your name?");
@@ -67,6 +68,108 @@ function test() {
 
 
 // -------------------------------------------------------------------------------------------
+
+
+
+// Son veriyi yazdırır
+
+var gameLevel = 1;
+gameLevel = 2;
+gameLevel = 3;
+
+alert("Your level is currently : " + gameLevel);
+
+
+
+
+
+
+
+
+// Ekrana yazdırma
+
+
+var message = 'Hello'
+var name = 'Batuhan'
+
+//write your code below this line:
+
+alert(message + ' there,' + ' ' + name)
+
+
+
+
+
+
+/*You have written 182 characters, you have -42 characters left.*/
+
+var tweet = prompt("Compose your tweet: ");
+
+var tweetCount = tweet.length;
+
+alert("You have written " + tweetCount + " characters, you have " + (140 - tweetCount) + " characters remaining.");
+
+/*You have written 182 characters, you have -42 characters left.*/
+
+// length
+
+var tweet = prompt("Compose your tweet: ");
+
+alert("You have written " + tweet.length + " characters, you have " + (140 - tweet.length) + " characters remaining.");
+
+
+
+
+// slice
+
+var tweet = prompt('Compose your tweet: ')
+var tweetUnder140 = tweet.slice(0, 140)
+alert(tweetUnder140)
+
+// Kısa hali
+
+alert(prompt('Compose your tweet:').slice(0, 140))
+
+
+
+
+// toUpperCase()
+
+var name = 'Batuhan'
+name.toUpperCase()
+
+// toLowerCase()
+var name = 'Batuhan'
+name.toLowerCase()
+
+
+
+
+
+// Sadece baş harfi büyük yapma
+
+// 1 create a that stores the name that user enters via prompt
+var name = prompt("What is your name?");
+
+// 2 Capitalise the first letter of their name
+    //a isolate the first char
+    var firstChar = name.slice(0,1);
+    
+    //b Turn the first char to upper Case
+    var upperCaseFirstChar = firstChar.toUpperCase();
+    
+    //c Isolate the rest of the name
+    var restOfName = name.slice(1,name.length)
+
+    //d Change the rest of the name lower case
+    restOfName = restOfName.toLowerCase();
+    
+    //e contactenate the first char with the rest of the char
+    var capitalisedName = upperCaseFirstChar + restOfName;
+
+// 3 We use the capitalised version of their name to greet them using an alert.
+alert("Hello, " + capitalisedName)
+
 
 
 
