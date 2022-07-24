@@ -314,7 +314,29 @@ console.log(bmi)
 
 
 
+// İF / ELSE YAPISI İLE
 
+var weight = prompt('Kilonuz : ')
+var height = prompt('Boyunuz : ')
+
+function bmiCalculator(weight, height) {
+  var bmi = Math.round(weight / Math.pow(height, 2))
+  var interpretation
+
+  if (bmi < 18.5) {
+    interpretation = 'Your BMI is ' + bmi + ', so you are underweight.'
+  }
+
+  if (bmi >= 18.5 && bmi < 24.9) {
+    interpretation = 'Your BMI is ' + bmi + ', so you have a normal weight.'
+  }
+
+  if (bmi >= 25) {
+    interpretation = 'Your BMI is ' + bmi + ', so you are overweight.'
+  }
+
+  return interpretation
+}
 
 
 
@@ -324,6 +346,23 @@ console.log(bmi)
 
 // Love Score Game
 
+prompt('What is your name?');
+prompt('What is their name?');
+
+var loveScore = Math.random() * 100;
+loveScore = Math.floor(loveScore) + 1; //1-100
+
+if (loveScore > 70) {
+  alert('Your love score is ' + loveScore + '%' + ' You love each other like Kanye loves Kanye.');
+} else {
+  alert('Your love score is ' + loveScore + '%');
+}
+
+
+
+
+// DİĞER ŞEKLİ
+
 prompt('What is your name?')
 prompt('What is their name?')
 
@@ -332,10 +371,37 @@ loveScore = Math.floor(loveScore) + 1 //1-100
 
 if (loveScore > 70) {
   alert(
-    'Your love score is ' + loveScore + '%' + ' You love each other like Kanye loves Kanye.'
+    'Your love score is ' +
+      loveScore +
+      '%' +
+      ' You love each other like Kanye loves Kanye.'
   )
-} else {
+}
+
+if (loveScore > 30 && loveScore <= 70) {
   alert('Your love score is ' + loveScore + '%')
+}
+
+if (loveScore <= 30) {
+  alert(
+    'Your love score is ' +
+      loveScore +
+      '%' +
+      ' You go together like oil and water.'
+  )
+}
+
+
+
+
+
+var a = 1
+var b = 1
+
+if (a === b) {
+  console.log('yes')
+} else {
+  console.log('no')
 }
 
 
@@ -344,3 +410,39 @@ if (loveScore > 70) {
 
 
 
+// ARRAY
+// Giriş Bilgisi Kontrol ettirme
+
+var guestList = ['angela', 'jack', 'pam', 'james', 'lara', 'jason']
+
+var guestName = prompt('What is your name?')
+
+if (guestList.includes(guestName)) {
+  alert('Welcome')
+} else {
+  alert('Sorry, maybe next time')
+}
+
+
+
+//Bölünebilme olayına göre diziye istedilen şeyi ekleme
+var output = []
+var count = 1
+
+function fizzBuzz() {
+  if (count % 3 === 0 && count % 5 === 0) {
+    output.push('FizzBuzz')
+  }
+
+  if (count % 3 === 0) {
+    output.push('fizz')
+  } else if (count % 5 === 0) {
+    output.push('Buzz')
+  } else {
+    output.push(count)
+  }
+
+  count++
+
+  console.log(output)
+}
