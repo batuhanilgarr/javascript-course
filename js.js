@@ -236,3 +236,67 @@ alert('Your dog is ' + humanAge + ' years old in human years.')
 
 
 
+// Function ()
+
+function getMilk() {
+  console.log('LeaveHouse')
+  console.log('moveRight')
+  console.log('LeaveHouse')
+  console.log('moveRight')
+  console.log('LeaveHouse')
+  console.log('moveRight')
+  console.log('LeaveHouse')
+  console.log('moveRight')
+  console.log('LeaveHouse')
+  console.log('moveRight')
+  console.log('LeaveHouse')
+  console.log('moveRight')
+  console.log('LeaveHouse')
+  console.log('moveRight')
+}
+
+getMilk()
+
+
+
+
+
+
+function getMilk(money) {
+  console.log('leaveHouse')
+  console.log('moveRight')
+  console.log('moveRight')
+  console.log('moveUp')
+  console.log('moveUp')
+  console.log('moveUp')
+  console.log('moveUp')
+  console.log('moveRight')
+  console.log('moveRight')
+
+  var numberOfBottles = Math.floor(money / 1.5)
+
+  console.log('buy ' + numberOfBottles + ' bootles of Milk')
+  console.log('moveLeft')
+  console.log('moveLeft')
+  console.log('moveDown')
+  console.log('moveDown')
+  console.log('moveDown')
+  console.log('moveDown')
+  console.log('moveLeft')
+  console.log('moveLeft')
+  console.log('enterHouse')
+}
+
+getMilk(5)
+
+
+
+
+
+
+
+
+
+
+
+
