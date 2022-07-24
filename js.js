@@ -189,3 +189,50 @@ alert('Your dog is ' + humanAge + ' years old in human years.')
 
 
 
+// Soru 1:
+// What does num  equal?
+
+// var num = 12;
+// num /= 3;
+
+// 4
+
+
+
+// Soru 2:
+// What does a  equal?
+
+// var a = 16 % 4; 
+
+
+// 0
+
+
+
+// Soru 3:
+// What does y  equal?
+
+// var x = 3;
+// var y = x++;
+// y += 1;
+
+// 4
+
+
+
+
+
+
+
+
+
+// --------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
