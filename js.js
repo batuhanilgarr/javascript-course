@@ -446,3 +446,66 @@ function fizzBuzz() {
 
   console.log(output)
 }
+
+
+// DİĞER YÖNTEM
+
+var output = []
+var count = 1
+
+function fizzBuzz() {
+  while (count <= 100) {
+    if (count % 3 === 0 && count % 5 === 0) {
+      output.push('FizzBuzz')
+    } else if (count % 3 === 0) {
+      output.push('fizz')
+    } else if (count % 5 === 0) {
+      output.push('Buzz')
+    } else {
+      output.push(count)
+    }
+
+    count++
+  }
+  console.log(output)
+}
+
+
+
+
+// Bugün yemeği kim ısmarlıyor
+function whosPaying(names) {
+  var numberOfPeople = names.length
+  var randomPersonPosition = Math.floor(Math.random() * numberOfPeople)
+  var randomPerson = names[randomPersonPosition]
+
+  console.log(randomPerson + ' is going to buy launch today!')
+}
+
+
+
+
+
+
+
+var numberOfBottles = 99
+while (numberOfBottles >= 0) {
+    var bottleWord = "bottle";
+    if (numberOfBottles === 1) {
+        bottleWord = "bottles";
+    } 
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+    console.log(numberOfBottles + " " + bottleWord + " of beer,");
+    console.log("Take one down, pass it around,");
+	numberOfBottles--;
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+}
+
+
+
+
+
+
+
+
+
